@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Huddle landing page with coded decorative elements</title>
 </head>
@@ -13,7 +13,7 @@
 <body>
   <!-- TOP SECTION / UI -->
   <div class="top-container">
-    <img class="top-logo" src="images\logo.svg" alt="">
+    <img class="top-logo" src="logo.svg" alt="">
     <a class="top-button" href="#">Try It Free</a>
     <div class="top-text">
       <h1>Build The Community Your Fans Will Love</h1>
@@ -21,7 +21,7 @@
         Create connections with your users as you engage in genuine discussion.</p>
       <a href="#" class="mybtn-middle">Get Started For Free</a>
     </div>
-    <img class="mockups" src="images\illustration-mockups.svg" alt="">
+    <img class="mockups" src="illustration-mockups.svg" alt="">
   </div>
 
   <!-- MIDDLE SECTION -->
@@ -33,7 +33,7 @@
         <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of
           the insightful conversations you miss out on with a feedback form.</p>
       </div>
-      <img class="triad-img" src="images\illustration-grow-together.svg" alt="">
+      <img class="triad-img" src="illustration-grow-together.svg" alt="">
     </div>
     <!-- SECOND BOX -->
     <div class="triad reversediv">
@@ -42,7 +42,7 @@
         <p> You wouldn't paginate a conversation in real life, so why do it online? Our threads have
           just-in-time loading for a more natural flow.</p>
       </div>
-      <img class="triad-img" src="images\illustration-flowing-conversation.svg" alt="">
+      <img class="triad-img" src="illustration-flowing-conversation.svg" alt="">
     </div>
     <!-- THIRD BOX -->
     <div class="triad">
