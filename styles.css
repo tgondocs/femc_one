@@ -349,7 +349,7 @@ ul a {
 
   /* középső rész media */
   .triad {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     text-align: center;
     height: auto;
@@ -371,7 +371,10 @@ ul a {
 
   .icons {
     display: flex;
-    flex-direction: column;
+    width: 60%;
+    margin: 20px auto;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .fab {
@@ -424,20 +427,20 @@ ul a {
   }
 
   .mockups {
-    margin: 2rem;
+    margin: 1rem auto 2rem;
   }
 
   .triad {
     margin: 20px auto;
   }
 
-  .triad-text>h1 {
+  .triad-text >h1 {
     text-align: center;
     font-size: 1.3em;
   }
 
   .triad-text {
-    text-align: initial;
+    text-align: center;
   }
 
   .bottom-container {
@@ -447,18 +450,20 @@ ul a {
 
   .bottom-logo {
     left: 35px;
-    top: 180px;
+    top: 125px;
   }
 
   .stand-out {
     transform: scale(0.7);
     font-size: 1em;
     width: 90%;
+    margin-bottom: -70px;
   }
 
   .inner-div {
     justify-content: center;
     margin-left: 20px;
+    flex-direction: column;
   }
 
   ul {
