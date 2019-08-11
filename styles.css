@@ -405,6 +405,7 @@ ul a {
   .top-text {
     width: 95%;
     margin: auto;
+    padding-bottom: 25px;
   }
 
   .top-text>h1 {
