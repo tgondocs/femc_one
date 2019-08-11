@@ -1,411 +1,105 @@
-body {
-  margin: 0;
-  line-height: 1.25;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/*user interface */
-.top-container {
-  background: #98d6eb url("bg-hero-desktop.svg");
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto 8rem;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Huddle landing page with coded decorative elements</title>
+</head>
 
-.mockups {
-  display: block;
-  width: 45%;
-  height: auto;
-  margin: auto;
-  padding: 4rem;
-}
+<body>
+  <!-- TOP SECTION / UI -->
+  <div class="top-container">
+    <img class="top-logo" src="images\logo.svg" alt="">
+    <a class="top-button" href="#">Try It Free</a>
+    <div class="top-text">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.</p>
+      <a href="#" class="mybtn-middle">Get Started For Free</a>
+    </div>
+    <img class="mockups" src="images\illustration-mockups.svg" alt="">
+  </div>
 
-.top-logo {
-  position: absolute;
-  left: 4rem;
-  top: 20px;
-}
+  <!-- MIDDLE SECTION -->
+  <div class="container">
+    <!-- FIRST BOX -->
+    <div class="triad">
+      <div class="triad-text">
+        <h2>Grow Together</h2>
+        <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of
+          the insightful conversations you miss out on with a feedback form.</p>
+      </div>
+      <img class="triad-img" src="images\illustration-grow-together.svg" alt="">
+    </div>
+    <!-- SECOND BOX -->
+    <div class="triad reversediv">
+      <div class="triad-text">
+        <h2> Flowing Conversations</h2>
+        <p> You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+          just-in-time loading for a more natural flow.</p>
+      </div>
+      <img class="triad-img" src="images\illustration-flowing-conversation.svg" alt="">
+    </div>
+    <!-- THIRD BOX -->
+    <div class="triad">
+      <div class="triad-text">
+        <h2>Your Users</h2>
+        <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once
+          signed in to your app, your users can start chatting immediately.</p>
+      </div>
+      <img class="triad-img" src="images\illustration-your-users.svg" alt="">
+    </div>
+  </div>
+  <!-- BOTTOM SECTION -->
+  </section>
+  <div class="bottom-container">
+    <div class="stand-out">
+      <h1>ready to build your community? </h1>
+      <a href="#" class="mybtn-bottom">Get Started For Free</a>
+    </div>
+    <div class="inner-div">
+      <img class="bottom-logo" src="images\logo.svg" alt="">
+      <ul class="ul-wide">
+        <li>
+          <img class="location-logo" src="images\icon-location.svg" alt=""><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.</a>
+        </li>
+        <li>
+          <a href="#"><img src="icon-phone.svg" alt="phone-icon"> +36 30 xxx xxxx</a>
+        </li>
+        <li>
+          <a href="#"><img src="images\icon-email.svg" alt="">example@huddle.com</a>
+        </li>
+      </ul>
+      <ul>
+        <li> <a href="#">About Us</a> </li>
+        <li> <a href="#">What We Do</a> </li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <ul>
+        <li> <a href="#">Career</a> </li>
+        <li> <a href="#">Blog</a> </li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+    <span> &copy; Copyright 2019 Huddle. All rights reserved. </span>
+  </div>
 
-.top-text {
-  padding: 4rem;
-  width: 30%;
-  font-size: 1.3rem;
-}
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://tgondocs.github.io/personal/" target="_blank"><span>Tamas Gondocs<span></a>.
+    </p>
+  </footer>
+</body>
 
-.top-button {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-
-/* UI vége */
-/* középső rész a képekkel */
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.triad {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 20rem;
-  width: 80%;
-  margin: auto;
-  box-shadow: 0 0 5px #CCC;
-  border-radius: 5px;
-  margin-bottom: 3rem;
-}
-
-.reversediv {
-  flex-direction: row-reverse;
-}
-
-.triad-text {
-  width: 40%;
-  margin-left: 8%;
-  font-size: 1.2rem;
-}
-
-.reversediv>.triad-text {
-  margin-right: 8%;
-}
-
-.triad-img {
-  display: block;
-  height: 80%;
-  margin-right: 8%;
-}
-
-.reversediv>.triad-img {
-  margin-left: 8%;
-}
-
-/* középső rész vége */
-/*alsó rész kezdete */
-.bottom-container {
-  background-color: black;
-  opacity: 0.85;
-  width: 100%;
-  margin: 120px auto 50px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  font-size: 1.2rem;
-}
-
-.stand-out {
-  background: white;
-  box-shadow: 0 0 5px #ccc;
-  border-radius: 5px;
-  width: 40%;
-  margin: auto;
-  margin-bottom: -30px;
-  padding: 35px 20px;
-  text-align: center;
-  position: relative;
-  bottom: 110px;
-  text-transform: capitalize;
-  opacity: 1;
-}
-
-.stand-out h1 {
-  margin-top: 0;
-}
-
-.inner-div {
-  display: flex;
-  margin: 20px auto 45px 50px;
-}
-
-.bottom-logo {
-  filter: invert(100%) grayscale(100%);
-  position: absolute;
-  left: 65px;
-  top: 115px;
-  z-index: 2;
-}
-
-.bottom-container span {
-  color: white;
-  font-size: 0.9rem;
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-}
-
-ul {
-  background: black;
-  color: white;
-  margin-top: 0;
-  list-style-type: none;
-  position: relative;
-  width: 20%;
-}
-
-ul a {
-  text-decoration: none;
-  margin: 10px 20px;
-  display: inline-block;
-}
-
-.location-logo {
-  top: 10px;
-}
-
-ul img {
-  position: absolute;
-  left: 20px;
-  width: auto;
-}
-
-ul a {
-  color: inherit;
-}
-
-.fab {
-  font-size: 0.7rem;
-  padding: 0.5em;
-  width: 1.2em;
-  margin: 0.3rem;
-  color: white;
-  border: 2px solid white;
-  border-radius: 50%;
-  text-align: center;
-}
-
-.attribution {
-  text-align: center;
-}
-
-/* BUTTONS */
-.top-button {
-  -moz-box-shadow: inset 0 1px 0 0 #ffffff;
-  -webkit-box-shadow: inset 0 1px 0 0 #ffffff;
-  box-shadow: inset 0 1px 0 0 #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
-  background: -moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-  background: -webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-  background: -o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-  background: -ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9', GradientType=0);
-  background-color: #f9f9f9;
-  -moz-border-radius: 18px;
-  -webkit-border-radius: 18px;
-  border-radius: 18px;
-  border: 1px solid #dcdcdc;
-  display: inline-block;
-  cursor: pointer;
-  color: #666666;
-  font-family: Arial;
-  font-size: 13px;
-  font-weight: bold;
-  padding: 9px 21px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #ffffff;
-}
-
-.top-button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
-  background: -moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-  background: -webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-  background: -o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-  background: -ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9', GradientType=0);
-  background-color: #e9e9e9;
-}
-
-.top-button:active {
-  position: relative;
-  top: 1px;
-}
-
-.mybtn-middle {
-  -moz-box-shadow: inset 0px 1px 0px 0px #fbafe3;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #fbafe3;
-  box-shadow: inset 0px 1px 0px 0px #fbafe3;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff5bb0), color-stop(1, #ef027d));
-  background: -moz-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-  background: -webkit-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-  background: -o-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-  background: -ms-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-  background: linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bb0', endColorstr='#ef027d', GradientType=0);
-  background-color: #ff5bb0;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  border: 1px solid #ee1eb5;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 13px;
-  font-weight: bold;
-  padding: 11px 42px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #c70067;
-}
-
-.mybtn-middle:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ef027d), color-stop(1, #ff5bb0));
-  background: -moz-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-  background: -webkit-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-  background: -o-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-  background: -ms-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-  background: linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef027d', endColorstr='#ff5bb0', GradientType=0);
-  background-color: #ef027d;
-}
-
-.mybtn-middle:active {
-  position: relative;
-  top: 1px;
-}
-
-/* BUTTON BOTTOM */
-.mybtn-bottom {
-  -moz-box-shadow: inset 0px 1px 0px 0px #fbafe3;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #fbafe3;
-  box-shadow: inset 0px 1px 0px 0px #fbafe3;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff5bb0), color-stop(1, #ef027d));
-  background: -moz-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-  background: -webkit-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-  background: -o-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-  background: -ms-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-  background: linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bb0', endColorstr='#ef027d', GradientType=0);
-  background-color: #ff5bb0;
-  -moz-border-radius: 35px;
-  -webkit-border-radius: 35px;
-  border-radius: 35px;
-  border: 1px solid #ee1eb5;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 14px 42px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #c70067;
-}
-
-.mybtn-bottom:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ef027d), color-stop(1, #ff5bb0));
-  background: -moz-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-  background: -webkit-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-  background: -o-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-  background: -ms-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-  background: linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef027d', endColorstr='#ff5bb0', GradientType=0);
-  background-color: #ef027d;
-}
-
-.mybtn-bottom:active {
-  position: relative;
-  top: 1px;
-}
-
-@media (max-width: 1200px) {
-  h2 {
-    font-size: 1.3em;
-  }
-}
-
-@media (max-width: 850px) {
-  .top-container {
-    background-image: url("bg-hero-mobile.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .top-text {
-    width: 70%;
-    text-align: center;
-    margin-top: 3rem;
-  }
-
-  .mockups {
-    width: 80%;
-    padding-top: 0;
-    margin: auto;
-  }
-
-  .top-logo {
-    width: 15em;
-    height: auto;
-    left: 5%;
-    top: 20px;
-  }
-
-  /* középső rész media */
-  .triad {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: auto;
-  }
-
-  .triad-text {
-    width: 70%;
-  }
-
-  .triad-img {
-    width: 80%;
-    height: auto;
-    margin: 2rem auto 2rem auto;
-  }
-
-  .inner-div {
-    flex-wrap: wrap;
-  }
-
-  ul {
-    width: 40%;
-  }
-
-  .stand-out {
-    bottom: 150px;
-    width: 70%;
-    transform: scale(0.9);
-    font-size: 1rem;
-  }
-
-  .bottom-logo {
-    top: 180px;
-  }
-}
-
-@media (max-width: 350px) {
-  .triad {
-    margin-left: 0;
-  }
-
-  .triad p {
-    text-align: justify;
-  }
-
-  .stand-out {
-    transform: scale(0.7);
-    font-size: 1rem;
-    width: 70%;
-  }
-
-  .inner-div {
-    justify-content: center;
-  }
-
-  .ul-wide {
-    width: 90% !important;
-  }
-
-  ul {
-    40%;
-  }
-}
+</html>
