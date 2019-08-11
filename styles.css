@@ -470,7 +470,17 @@ ul a {
     width: 90%;
     margin: auto;
   }
-
+  
+  .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  
+  .fab {
+  margin: auto 0;
+  }
+  
   footer {
     font-size: small;
   }
