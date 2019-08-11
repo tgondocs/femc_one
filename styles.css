@@ -1,5 +1,9 @@
 body {
+  width: 100vw;
+  height: 100%;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   line-height: 1.25;
 }
 
@@ -17,8 +21,7 @@ body {
   display: block;
   width: 45%;
   height: auto;
-  margin: auto;
-  padding: 4rem;
+  margin: 4rem auto;
 }
 
 .top-logo {
@@ -334,7 +337,7 @@ ul a {
   .mockups {
     width: 80%;
     padding-top: 0;
-    margin: auto;
+    margin: 3rem auto;
   }
 
   .top-logo {
@@ -362,12 +365,17 @@ ul a {
     margin: 2rem auto 2rem auto;
   }
 
-  .inner-div {
-    flex-wrap: wrap;
+  ul {
+    width: 25%;
   }
 
-  ul {
-    width: 40%;
+  .icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fab {
+    margin: 8px auto;
   }
 
   .stand-out {
@@ -378,38 +386,87 @@ ul a {
   }
 
   .bottom-logo {
-    top: 180px;
+    top: 80px;
+  }
+
+  span {
+    right: 35px;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
+  .top-container {
+    margin-bottom: 50px;
+  }
+
+  .top-text {
+    width: 95%;
+    margin: auto;
+  }
+
+  .top-text>h1 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .top-text>p {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
   .top-logo {
     max-width: 30%;
+    height: auto;
+  }
+
+  .top-button {
+    top: 10px;
+  }
+
+  .mockups {
+    margin: 2rem;
   }
 
   .triad {
-    margin-left: 0;
+    margin: 20px auto;
   }
 
-  .triad p {
-    text-align: justify;
+  .triad-text>h1 {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .triad-text {
+    text-align: initial;
+  }
+
+  .bottom-container {
+    text-align: initial;
+    margin-bottom: 15px;
+  }
+
+  .bottom-logo {
+    left: 35px;
+    top: 180px;
   }
 
   .stand-out {
     transform: scale(0.7);
-    font-size: 1rem;
-    width: 70%;
+    font-size: 1em;
+    width: 90%;
   }
 
   .inner-div {
     justify-content: center;
-  }
-
-  .ul-wide {
-    width: 90%!important;
+    margin-left: 20px;
   }
 
   ul {
-   width: 40%;
+    width: 90%;
+    margin: auto;
+  }
+
+  footer {
+    font-size: small;
   }
 }
