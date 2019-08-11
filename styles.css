@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  background: black;
+}
+
+.grow {
+  display: flex;
+  height: 200px;
+}
+
+.grow-img {
+  display: block;
+  height: 100%;
+  margin: auto;
+}
