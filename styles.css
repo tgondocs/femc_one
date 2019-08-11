@@ -383,6 +383,10 @@ ul a {
 }
 
 @media (max-width: 350px) {
+  .top-logo {
+    max-width: 30%;
+  }
+
   .triad {
     margin-left: 0;
   }
@@ -406,6 +410,6 @@ ul a {
   }
 
   ul {
-    40%;
+   width: 40%;
   }
 }
