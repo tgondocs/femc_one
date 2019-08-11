@@ -373,7 +373,7 @@ ul a {
   .icons {
     display: block;
     width: 60%;
-    margin: 20px auto;
+    margin: 0 auto;
   }
 
   .fab {
