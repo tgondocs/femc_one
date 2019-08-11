@@ -332,6 +332,7 @@ ul a {
     width: 70%;
     text-align: center;
     margin-top: 3rem;
+    padding-bottom: 30px;
   }
 
   .mockups {
@@ -370,11 +371,9 @@ ul a {
   }
 
   .icons {
-    display: flex;
+    display: block;
     width: 60%;
     margin: 20px auto;
-    flex-direction: row;
-    justify-content: space-around;
   }
 
   .fab {
@@ -451,7 +450,7 @@ ul a {
 
   .bottom-logo {
     left: 35px;
-    top: 160px;
+    top: 170px;
   }
 
   .stand-out {
